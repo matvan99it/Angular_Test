@@ -13,8 +13,7 @@ export class HeroService {
  
   constructor() { }
  
-  getHeroes(): void {
-  this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes);
-}
+  getHeroes(): Observable<Hero[]> {
+    return of(HEROES);
+  }
 }
