@@ -29,6 +29,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HeroDetailComponent,
     MessagesComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [InMemoryDataService]
 })
 export class AppModule { }
