@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class InMemoryDataService {
+  private heroesUrl = 'api/heroes';  // URL to web api
 createDb() {
     const heroes = [
       { id: 11, name: 'Mr. Nice' },
